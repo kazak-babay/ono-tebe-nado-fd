@@ -9,6 +9,7 @@
 
     font-style: normal;
     text-wrap: wrap;
+    line-height: 25px;
 }
 
 .bet-button {
@@ -137,7 +138,8 @@
 
 /* lots */
 
-.lots-content {
+.lots {
+    margin-bottom: 120px;
     padding: 0 25px;
 }
 
@@ -153,13 +155,13 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    list-style: none;
 }
 
 .lots__card-list-item {
     width: 334px;
     min-height: 596px;
     position: relative;
+    margin-bottom: 30px;
 }
 
 /* УКАЗАНИЕ ФОНОВ КАРТОЧЕК */
@@ -209,6 +211,86 @@
 }
 
 .lots__look-more-link {
-    margin-top: 30px;
     margin-left: 40px;
+    font-size: 20px;
+}
+
+/* ABOUT */
+
+.about {
+    margin-bottom: 180px;
+    padding: 0 25px;
+    display: grid;
+    grid-template-columns: 359px 1fr;
+}
+
+.about__logo {
+    width: 240px;
+    height: 240px;
+    background-color: black;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about__logo-image {
+    width: 142px;
+    height: 113px;
+}
+
+.about__title {
+    height: 240px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.about__title-text {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.about__text {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.about__text--upper {
+    margin-bottom: 24px;
+}
+
+/* FOOTER */
+
+.footer {
+    height: 180px;
+    padding: 0 50px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.footer__menu {
+    text-align: center;
+}
+
+.footer__menu-link {
+    font-size: 18px;
+}
+
+.footer__menu-link--active {
+    text-decoration: none;
+}
+
+.footer__social-list {
+    width: 240px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__social-list-item {
+    width: 48px;
+    height: 48px;
 }

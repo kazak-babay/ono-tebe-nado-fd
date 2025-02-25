@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 *,
 *::before,
 *::after {
@@ -35,4 +39,8 @@ img {
 
 button {
   font: inherit;
+}
+
+ul {
+    list-style: none;
 }
