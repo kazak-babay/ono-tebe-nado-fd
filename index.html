@@ -29,7 +29,7 @@
         </nav>
 
         <a href="" class="header__logo">
-          <img src="./images/logo-black.svg" alt="" />
+          <img src="./images/logo-black.svg" alt="logo" />
         </a>
 
         <address class="header__address address">
@@ -42,7 +42,6 @@
 
     <main>
       <section class="cover background">
-        <div class="overlay">
           <div class="cover-content">
             <h1 class="cover__title">
               <span class="aligned-text">ОНО</span>
@@ -54,10 +53,9 @@
               <p class="cover__description-text">
                 Аукцион вещей, в которые никто не верил
               </p>
-              <button class="bet-button">Сделать ставку</button>
+              <button class="bet-button" type="button">Сделать ставку</button>
             </div>
           </div>
-        </div>
       </section>
 
       <section class="lots" id="lots_section">
@@ -65,10 +63,9 @@
           <h2 class="lots__heading">ЛОТЫ</h2>
 
           <ul class="lots__card-list">
-            <li class="lots__card-list-item card_type_film background">
-              <div class="overlay">
+            <li class="lots__card-list-item">
                 <a class="card-link" href="">
-                  <article class="card">
+                  <article class="card card_type_film background">
                     <h3 class="card__title">
                       Фильм режиссёра, который бросил киношколу
                     </h3>
@@ -79,13 +76,11 @@
                     </p>
                   </article>
                 </a>
-              </div>
             </li>
 
-            <li class="lots__card-list-item card_type_book background">
-              <div class="overlay">
+            <li class="lots__card-list-item">
                 <a class="card-link" href="">
-                  <article class="card">
+                  <article class="card card_type_book background">
                     <h3 class="card__title">
                       Книга, где описан один скучный день из жизни рекламного
                       агента
@@ -100,27 +95,24 @@
                     </p>
                   </article>
                 </a>
-              </div>
             </li>
 
-            <li class="lots__card-list-item card_type_picture background">
-              <div class="overlay">
+            <li class="lots__card-list-item">
                 <a class="card-link" href="">
-                  <article class="card">
-                    <h3 class="card__title">
-                      Картина, которую повторит даже 5-летний сын маминой
-                      подруги
-                    </h3>
-                    <p class="card__text">
-                      Ну действительно, там линия, тут кружочек, а здесь и вовсе
-                      что-то похожее на инфузорию-туфельку. Никаких полей,
-                      лесов, котиков... Сколько бы вы на такое поставили, если
-                      бы не знали, что это — одна из революционных работ
-                      Кандинского?
-                    </p>
+                  <article class="card card_type_picture background">
+                        <h3 class="card__title">
+                        Картина, которую повторит даже 5-летний сын маминой
+                        подруги
+                        </h3>
+                        <p class="card__text">
+                        Ну действительно, там линия, тут кружочек, а здесь и вовсе
+                        что-то похожее на инфузорию-туфельку. Никаких полей,
+                        лесов, котиков... Сколько бы вы на такое поставили, если
+                        бы не знали, что это — одна из революционных работ
+                        Кандинского?
+                        </p>
                   </article>
                 </a>
-              </div>
             </li>
           </ul>
 
@@ -133,7 +125,7 @@
           <div class="about__logo">
             <img
               src="./images/logo-white.svg"
-              alt=""
+              alt="logo"
               class="about__logo-image"
             />
           </div>
@@ -193,16 +185,16 @@
 
       <ul class="footer__social-list">
         <li class="footer__social-list-item">
-          <a href=""> <img src="./images/yt.svg" alt="" /></a>
+          <a href=""> <img src="./images/yt.svg" alt="youtube link" /></a>
         </li>
         <li class="footer__social-list-item">
           <a href="">
-            <img src="./images/vk.svg" alt="" />
+            <img src="./images/vk.svg" alt="vk link" />
           </a>
         </li>
         <li class="footer__social-list-item">
           <a href="">
-            <img src="./images/pinterest.svg" alt="" />
+            <img src="./images/pinterest.svg" alt="pinterest link" />
           </a>
         </li>
       </ul>
