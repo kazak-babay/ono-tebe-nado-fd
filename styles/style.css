@@ -71,7 +71,6 @@
 
 .cover {
   position: relative;
-  z-index: -1;
   min-height: 757px;
   margin-bottom: 180px;
   padding: 165px 50px 50px 50px;
@@ -83,8 +82,8 @@
   content: "";
   position: absolute;
   inset: 0;
-  z-index: -1;
   background: rgb(0 0 0 / 0.6);
+  /* При отсутствии z-индексов псевдоэлемент перекрывает текст, мне показалось проще задать значение -1 для фона и оверлея, нежели задавать 1 всему тексту */
 }
 
 .cover__title {
@@ -102,16 +101,19 @@
 .aligned-text {
   align-self: start;
   letter-spacing: 30%;
+  z-index: 1;
 }
 
 .aligned-text_center {
   align-self: center;
   padding-left: 30px;
   padding-block: 20px;
+  z-index: 1;
 }
 
 .aligned-text_right {
   align-self: end;
+  z-index: 1;
 }
 
 .aligned-text_right span {
@@ -129,10 +131,15 @@
   line-height: 127%;
   text-transform: uppercase;
   word-spacing: 0.8em;
+  z-index: 1;
 }
 
 .cover__description-text span {
   word-spacing: 0.9em;
+}
+
+.cover__button {
+  z-index: 1;
 }
 
 /* lots */
@@ -188,7 +195,6 @@
 
 .card {
   position: relative;
-  z-index: -1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -199,7 +205,6 @@
   content: "";
   position: absolute;
   inset: 0;
-  z-index: -1;
   background: rgb(0 0 0 / 0.6);
 }
 
@@ -214,6 +219,7 @@
   line-height: 120%;
   text-decoration: underline;
   text-transform: uppercase;
+  z-index: 1;
 }
 
 .card__text {
@@ -221,6 +227,7 @@
   font-size: 20px;
   line-height: 120%;
   text-decoration: none;
+  z-index: 1;
 }
 
 .lots__look-more-link {
